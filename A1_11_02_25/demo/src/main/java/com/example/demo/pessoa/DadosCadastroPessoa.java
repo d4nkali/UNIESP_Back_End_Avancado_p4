@@ -1,4 +1,6 @@
 package com.example.demo.pessoa;
 
-public class DadosCadastroPessoa {
+public record DadosCadastroPessoa() {
+
+
 }
