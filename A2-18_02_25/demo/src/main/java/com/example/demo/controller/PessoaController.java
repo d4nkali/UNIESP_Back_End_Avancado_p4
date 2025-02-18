@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("pessoa")
+@RequestMapping("/pessoa")
 public class PessoaController {
 
     @PostMapping
     public void cadastrar(@RequestBody DadosCadastroPessoa dados) {
 
-        System.out.println(dados);
+        System.out.println(json);
 
     }
 
