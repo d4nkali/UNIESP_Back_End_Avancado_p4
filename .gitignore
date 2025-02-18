@@ -8,3 +8,4 @@
 *.doc
 *.docx
 A2-18_02_25/demo/src/main/resources/application.properties
+*.properties
