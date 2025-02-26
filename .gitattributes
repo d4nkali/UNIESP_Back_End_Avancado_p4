@@ -1,4 +1,4 @@
-# Colocando sql como linguagem no github
+# Colocando sql como linguagem no GitHub
 
 *.sql linguist-detectable=true
 *.sql linguist-language=sql
@@ -13,4 +13,4 @@
 *.java eol=lf
 *.md eol=lf
 *.txt eol=lf
-
+*.sh eol=lf
