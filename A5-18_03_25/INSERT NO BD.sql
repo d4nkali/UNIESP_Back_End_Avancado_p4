@@ -1,4 +1,3 @@
-
 INSERT INTO medicos (id, nome, email, crm, especialidade, logradouro, bairro, cep, complemento, numero, uf, cidade, telefone, ativo) VALUES
 (1, 'João Silva', 'joao.silva1@example.com', '123456', 'ORTOPEDIA', 'Avenida Paulista', 'Bela Vista', '01311000', NULL, '101', 'SP', 'São Paulo', '11999990001', 1),
 (2, 'Maria Souza', 'maria.souza2@example.com', '234567', 'CARDIOLOGIA', 'Rua XV de Novembro', 'Centro', '80020110', 'Apto 2', '102', 'PR', 'Curitiba', '41999990002', 1),
@@ -45,11 +44,10 @@ INSERT INTO pacientes (id, nome, email, cpf, logradouro, bairro, cep, complement
 (20, 'Vanessa Lopes', 'vanessa.lopes20@example.com', '20234567890', 'Avenida Paulista', 'Bela Vista', '01311000', 'Apto 20', '120', 'SP', 'São Paulo', '11999990020', 1),
 (21, 'Quico Florinda', 'quico.florinda@voll.med', '333.444.333-21', 'rua 21', 'bairro', '85412366', NULL, '5', 'DF', 'Brasília', '555461245', 1);
 
-INSERT INTO usuarios (id, login, senha) VALUES
-(1, 'ana.souza@voll.med', '$2a$10$Y50UaMFOxteibQEYLrwuHeehHYfcoafCopUazP12.rqB41bsolF5.');
+INSERT INTO usuarios (login, senha) VALUES
+('ana.souza@voll.med', '$2a$10$Y50UaMFOxteibQEYLrwuHeehHYfcoafCopUazP12.rqB41bsolF5.');
 
 
 INSERT INTO consultas (id, medico_id, paciente_id, data) VALUES
 (1, 1, 1, '2024-11-11 13:00:00'),
 (2, 1, 1, '2024-11-14 13:00:00');
-
