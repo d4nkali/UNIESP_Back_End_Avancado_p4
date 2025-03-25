@@ -1,0 +1,118 @@
+type: collection.insomnia.rest/5.0
+name: Back-End-p4
+meta:
+  id: wrk_2f90e519595442ea995f2c5a2d1c8ab4
+  created: 1739313451250
+  modified: 1740527214740
+collection:
+  - name: Medico API
+    meta:
+      id: fld_49cb7e2c6a0f40b7843158ce957a5c42
+      created: 1740526734685
+      modified: 1740526782889
+      sortKey: -1740526734685
+    children:
+      - url: "{{baseUrl}}/medicos"
+        name: Listar_Medicos
+        meta:
+          id: req_b69cc5a05bf2426e9615494d71dd7d69
+          created: 1740526739963
+          modified: 1741738204674
+          isPrivate: false
+          sortKey: -1740526739963
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/10.3.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{baseUrl}}/login"
+        name: Efetuar Login
+        meta:
+          id: req_546e0e682e914c66aca6e738ec31e6fe
+          created: 1742340773207
+          modified: 1742341025542
+          isPrivate: false
+          sortKey: -1742340773207
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"login": "ana.souza@voll.med",
+            	"senha": "123456"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - url: http://localhost:8080/pessoa
+    name: Cadastrar Pessoa
+    meta:
+      id: req_20ec15913abb412195954241a14887c2
+      created: 1739313461148
+      modified: 1739315437506
+      isPrivate: false
+      sortKey: -1739313461148
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nome": "Ana Maria",
+        	"email": "ana@iesp.edu",
+        	"fone": "83994627852"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_8137c5d89e57a49e2949d0991f1bfdedc19b2824
+    created: 1739313451258
+    modified: 1740528006106
+  cookies:
+    - key: JSESSIONID
+      value: 1A5CFF3667BD79E92C566233D0A459AE
+      domain: localhost
+      path: /
+      httpOnly: true
+      hostOnly: true
+      creation: 2025-02-26T00:00:06.105Z
+      lastAccessed: 2025-02-26T00:00:06.105Z
+      id: 2cc713d8-82bd-4ea5-8993-1aff53cb073b
+environments:
+  name: Base Environment
+  meta:
+    id: env_8137c5d89e57a49e2949d0991f1bfdedc19b2824
+    created: 1739313451254
+    modified: 1740527129714
+    isPrivate: false
+  data:
+    baseUrl: http://localhost:8080
