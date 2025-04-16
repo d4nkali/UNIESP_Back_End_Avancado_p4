@@ -13,17 +13,20 @@ collection:
       sortKey: -1740526734685
     children:
       - url: "{{baseUrl}}/medicos"
-        name: Listar_Medicos
+        name: Listar Medicos
         meta:
           id: req_b69cc5a05bf2426e9615494d71dd7d69
           created: 1740526739963
-          modified: 1741738204674
+          modified: 1744761361874
           isPrivate: false
           sortKey: -1740526739963
         method: GET
         headers:
           - name: User-Agent
             value: insomnia/10.3.1
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJhbmEuc291emFAdm9sbC5tZWQiLCJleHAiOjE3NDQ3NjgxNjR9.RJ_p8dQNJTH5Wf2IKhPM44-0miIKNC0RnllCmg7qEY8
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -37,7 +40,7 @@ collection:
         meta:
           id: req_546e0e682e914c66aca6e738ec31e6fe
           created: 1742340773207
-          modified: 1742341025542
+          modified: 1744156280883
           isPrivate: false
           sortKey: -1742340773207
         method: POST
