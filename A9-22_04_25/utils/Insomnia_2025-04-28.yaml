@@ -12,12 +12,12 @@ collection:
       modified: 1740526782889
       sortKey: -1740526734685
     children:
-      - url: "{{baseUrl}}/medicos"
+      - url: "{{baseUrl}}/medicos/"
         name: Listar Medicos
         meta:
           id: req_b69cc5a05bf2426e9615494d71dd7d69
           created: 1740526739963
-          modified: 1744761361874
+          modified: 1745867116290
           isPrivate: false
           sortKey: -1740526739963
         method: GET
@@ -26,7 +26,7 @@ collection:
             value: insomnia/10.3.1
         authentication:
           type: bearer
-          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJhbmEuc291emFAdm9sbC5tZWQiLCJleHAiOjE3NDQ3NjgxNjR9.RJ_p8dQNJTH5Wf2IKhPM44-0miIKNC0RnllCmg7qEY8
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJhbmEuc291emFAdm9sbC5tZWQiLCJleHAiOjE3NDU4NzQyNDN9.KdPAlmNlZmJl786egh8tdk4ll8vC8AgJfw2OGjh4e1g
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -56,6 +56,29 @@ collection:
             value: application/json
           - name: User-Agent
             value: insomnia/11.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{baseUrl}}/medicos/5"
+        name: Listar Medicos por ID
+        meta:
+          id: req_4bf09856f222413693f38d1fbce2dd79
+          created: 1745867112529
+          modified: 1745867112529
+          isPrivate: false
+          sortKey: -1739920100555.5
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/10.3.1
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJhbmEuc291emFAdm9sbC5tZWQiLCJleHAiOjE3NDU4NzQyNDN9.KdPAlmNlZmJl786egh8tdk4ll8vC8AgJfw2OGjh4e1g
         settings:
           renderRequestBody: true
           encodeUrl: true
